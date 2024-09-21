@@ -1,0 +1,41 @@
+# Tema și plugin-uri
+remote_theme: pages-themes/cayman@v0.2.0
+plugins:
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Informații site
+title: "nomenclatoare.ro"
+description: "Liste de date standardizate și accesibile"
+show_downloads: false
+
+# Setări pentru conținut
+markdown: kramdown
+highlighter: rouge
+
+# Excluderi
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - LICENSE
+  - README.md
+
+# Setări personalizate
+collections:
+  nomenclatoare:
+    output: true
+    permalink: /:collection/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "nomenclatoare"
+    values:
+      layout: "nomenclator"
