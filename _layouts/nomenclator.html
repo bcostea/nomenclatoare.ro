@@ -2,21 +2,41 @@
 layout: default
 ---
 
-<h1>{{ page.title }}</h1>
+<div class="nomenclator-header-section">
+  <h1>{{ page.title }}</h1>
+  <p class="nomenclator-description">{{ page.description }}</p>
+</div>
 
-<p>{{ page.description }}</p>
-
-{{ content }}
+<div class="content-section">
+  {{ content }}
+</div>
 
 {% if page.files %}
-<h2>Fișiere disponibile</h2>
-<ul class="downloads">
-  {% for file in page.files %}
-    <li>
-      <a href="{{ file.path | relative_url }}" class="btn">
-        {{ file.name }} ({{ file.format | upcase }})
-      </a>
-    </li>
-  {% endfor %}
-</ul>
+<div class="files-section">
+  <h2><i class="fas fa-download"></i> Fișiere disponibile</h2>
+  <ul class="downloads">
+    {% for file in page.files %}
+      <li>
+        <a href="{{ file.path | relative_url }}" class="btn">
+          {% if file.format == "csv" %}
+            <i class="fas fa-file-csv"></i>
+          {% elsif file.format == "sql" %}
+            <i class="fas fa-database"></i>
+          {% elsif file.format == "json" %}
+            <i class="fas fa-file-code"></i>
+          {% elsif file.format == "xml" %}
+            <i class="fas fa-file-code"></i>
+          {% elsif file.format == "pdf" %}
+            <i class="fas fa-file-pdf"></i>
+          {% elsif file.format == "xlsx" or file.format == "xls" %}
+            <i class="fas fa-file-excel"></i>
+          {% else %}
+            <i class="fas fa-file"></i>
+          {% endif %}
+          {{ file.name }} ({{ file.format | upcase }})
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
 {% endif %}
