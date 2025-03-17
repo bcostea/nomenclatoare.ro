@@ -2,6 +2,7 @@
 layout: default
 title: nomenclatoare.ro
 description: Colecție de nomenclatoare și codificări în formate ușor de utilizat
+class: homepage
 ---
 
 ## Despre nomenclatoare.ro

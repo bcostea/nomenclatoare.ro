@@ -91,6 +91,7 @@ body {
 .nav-link:hover {
   color: var(--primary-color);
   border-bottom-color: var(--primary-color);
+  text-decoration: none;
 }
 
 /* Main content styling */
@@ -106,6 +107,11 @@ body {
   margin-bottom: 25px;
   padding-bottom: 15px;
   border-bottom: 1px solid var(--border-color);
+}
+
+/* Hide page header on homepage */
+.homepage .page-header {
+  display: none;
 }
 
 .page-title {
@@ -158,7 +164,6 @@ a {
 
 a:hover {
   color: var(--secondary-color);
-  text-decoration: underline;
 }
 
 /* Lists */
@@ -264,21 +269,20 @@ li {
 .btn {
   display: inline-block;
   padding: 10px 16px;
-  background-color: var(--primary-color);
+  background-color: #3949ab;
   color: white;
   text-decoration: none;
-  border-radius: 6px;
+  border-radius: 4px;
   font-weight: 500;
-  transition: all 0.25s ease;
+  transition: background-color 0.2s ease;
   border: none;
   cursor: pointer;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
 }
 
 .btn:hover {
-  background-color: var(--secondary-color);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+  background-color: #303f9f;
+  text-decoration: none;
+  color: white;
 }
 
 .btn i {
