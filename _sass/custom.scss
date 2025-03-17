@@ -1,0 +1,300 @@
+/* Custom styles for nomenclatoare.ro */
+
+:root {
+  --primary-color: #4e73df;
+  --secondary-color: #2e59d9;
+  --text-color: #444;
+  --light-text: #777;
+  --background-color: #fff;
+  --light-bg: #f8f9fa;
+  --border-color: #e3e6f0;
+  --shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15);
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  color: var(--text-color);
+  background-color: var(--light-bg);
+  line-height: 1.6;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header styling */
+.site-header {
+  background-color: var(--background-color);
+  padding: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 40px;
+  box-shadow: var(--shadow);
+}
+
+.header-content {
+  padding: 0 20px;
+}
+
+.site-title {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.site-title a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.site-description {
+  margin: 5px 0 0;
+  color: var(--light-text);
+  font-weight: 300;
+}
+
+.site-nav {
+  display: flex;
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.nav-link {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 0;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.nav-link:hover {
+  color: var(--primary-color);
+  border-bottom-color: var(--primary-color);
+}
+
+/* Main content styling */
+.main-content {
+  background-color: var(--background-color);
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  margin-bottom: 40px;
+}
+
+.page-header {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.page-title {
+  margin: 0 0 10px;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.page-description {
+  margin: 0;
+  font-size: 1.1rem;
+  color: var(--light-text);
+  font-weight: 300;
+}
+
+.content-wrapper {
+  padding: 20px 0;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--text-color);
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.75rem; }
+h4 { font-size: 1.5rem; }
+h5 { font-size: 1.25rem; }
+h6 { font-size: 1rem; }
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--secondary-color);
+  text-decoration: underline;
+}
+
+/* Lists */
+ul, ol {
+  padding-left: 2rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+/* Nomenclator cards */
+.nomenclator-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+  margin: 30px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nomenclator-card {
+  background-color: var(--background-color);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  transition: all 0.3s ease;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.nomenclator-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0.5rem 2rem 0 rgba(58, 59, 69, 0.2);
+}
+
+.nomenclator-header {
+  padding: 20px 20px 10px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.nomenclator-header h3 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.nomenclator-body {
+  padding: 20px;
+  flex-grow: 1;
+}
+
+.nomenclator-footer {
+  padding: 10px 20px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Downloads styling */
+.downloads {
+  list-style: none;
+  padding: 0;
+  margin: 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.downloads li {
+  margin-bottom: 10px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: var(--primary-color);
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--secondary-color);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn i {
+  margin-right: 6px;
+}
+
+/* Footer */
+.site-footer {
+  padding: 20px 0;
+  background-color: var(--background-color);
+  text-align: center;
+  color: var(--light-text);
+  font-size: 0.9rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.footer-links a {
+  color: var(--light-text);
+  margin: 0 10px;
+}
+
+.footer-links a:hover {
+  color: var(--primary-color);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .site-header {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .site-nav {
+    margin-top: 15px;
+    justify-content: center;
+  }
+  
+  .main-content {
+    padding: 25px;
+  }
+  
+  .page-title {
+    font-size: 2rem;
+  }
+  
+  .nomenclator-list {
+    grid-template-columns: 1fr;
+  }
+  
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}

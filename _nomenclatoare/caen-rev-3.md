@@ -22,6 +22,11 @@ Acest nomenclator este utilizat pentru:
 - Raportări fiscale și economice
 - Diverse analize economice și sectoriale
 
+Referințe externe:
+
+- [CAEN Rev. 3](https://www.onrc.ro/documente/anunturi/CAEN-Rev.3_structura-completa.pdf)
+
+
 ## Format
 
 Nomenclatorul CAEN Rev. 3 este disponibil în două formate:
