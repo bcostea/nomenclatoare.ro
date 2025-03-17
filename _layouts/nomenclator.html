@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<h1>{{ page.title }}</h1>
+
+<p>{{ page.description }}</p>
+
+{{ content }}
+
+{% if page.files %}
+<h2>Fișiere disponibile</h2>
+<ul class="downloads">
+  {% for file in page.files %}
+    <li>
+      <a href="{{ file.path | relative_url }}" class="btn">
+        {{ file.name }} ({{ file.format | upcase }})
+      </a>
+    </li>
+  {% endfor %}
+</ul>
+{% endif %}

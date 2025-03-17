@@ -1,0 +1,35 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+.downloads {
+  list-style: none;
+  padding: 0;
+  margin: 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.downloads li {
+  margin-bottom: 10px;
+}
+
+.downloads .btn {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #159957;
+  background-image: linear-gradient(120deg, #155799, #159957);
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.downloads .btn:hover {
+  background-color: #157965;
+  background-image: linear-gradient(120deg, #156489, #157965);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}

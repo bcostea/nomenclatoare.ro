@@ -11,3 +11,4 @@ De fiecare dată când am avut nevoie de un nomenclator a trebuit să caut, să 
 
 # Nomenclatoare
 
+- [CAEN Rev. 3](/nomenclatoare/caen-rev-3/) - Clasificarea activităţilor din economia naţionala
