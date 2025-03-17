@@ -1,14 +1,16 @@
 /* Custom styles for nomenclatoare.ro */
 
 :root {
-  --primary-color: #4e73df;
-  --secondary-color: #2e59d9;
-  --text-color: #444;
-  --light-text: #777;
+  --primary-color: #3a5bf9;
+  --secondary-color: #6c63ff;
+  --heading-color: #2d3748;
+  --text-color: #4a5568;
+  --light-text: #718096;
   --background-color: #fff;
-  --light-bg: #f8f9fa;
-  --border-color: #e3e6f0;
-  --shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15);
+  --light-bg: #f7fafc;
+  --border-color: #e2e8f0;
+  --shadow: 0 0.15rem 1.75rem 0 rgba(0, 0, 0, 0.08);
+  --card-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.03);
 }
 
 body {
@@ -30,7 +32,7 @@ body {
 /* Header styling */
 .site-header {
   background-color: var(--background-color);
-  padding: 20px 0;
+  padding: 22px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -52,8 +54,13 @@ body {
 }
 
 .site-title a {
-  color: var(--primary-color);
+  color: var(--heading-color);
   text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.site-title a:hover {
+  color: var(--primary-color);
 }
 
 .site-description {
@@ -64,7 +71,7 @@ body {
 
 .site-nav {
   display: flex;
-  gap: 20px;
+  gap: 22px;
   padding: 0 20px;
 }
 
@@ -86,14 +93,14 @@ body {
 .main-content {
   background-color: var(--background-color);
   padding: 40px;
-  border-radius: 8px;
+  border-radius: 10px;
   box-shadow: var(--shadow);
   margin-bottom: 40px;
 }
 
 .page-header {
-  margin-bottom: 30px;
-  padding-bottom: 20px;
+  margin-bottom: 35px;
+  padding-bottom: 25px;
   border-bottom: 1px solid var(--border-color);
 }
 
@@ -101,7 +108,8 @@ body {
   margin: 0 0 10px;
   font-size: 2.5rem;
   font-weight: 600;
-  color: var(--primary-color);
+  color: var(--heading-color);
+  letter-spacing: -0.025em;
 }
 
 .page-description {
@@ -109,6 +117,7 @@ body {
   font-size: 1.1rem;
   color: var(--light-text);
   font-weight: 300;
+  max-width: 650px;
 }
 
 .content-wrapper {
@@ -121,7 +130,8 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1rem;
   font-weight: 600;
   line-height: 1.2;
-  color: var(--text-color);
+  color: var(--heading-color);
+  letter-spacing: -0.015em;
 }
 
 h1 { font-size: 2.5rem; }
@@ -171,7 +181,7 @@ li {
 .nomenclator-card {
   background-color: var(--background-color);
   border-radius: 8px;
-  box-shadow: var(--shadow);
+  box-shadow: var(--card-shadow);
   transition: all 0.3s ease;
   overflow: hidden;
   display: flex;
@@ -180,7 +190,7 @@ li {
 
 .nomenclator-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 0.5rem 2rem 0 rgba(58, 59, 69, 0.2);
+  box-shadow: 0 0.5rem 2rem 0 rgba(0, 0, 0, 0.1);
 }
 
 .nomenclator-header {
@@ -255,25 +265,26 @@ li {
 
 .btn {
   display: inline-block;
-  padding: 10px 15px;
+  padding: 10px 16px;
   background-color: var(--primary-color);
   color: white;
   text-decoration: none;
-  border-radius: 4px;
+  border-radius: 6px;
   font-weight: 500;
-  transition: all 0.3s ease;
+  transition: all 0.25s ease;
   border: none;
   cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
 }
 
 .btn:hover {
   background-color: var(--secondary-color);
   transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
 }
 
 .btn i {
-  margin-right: 6px;
+  margin-right: 8px;
 }
 
 /* Footer */
