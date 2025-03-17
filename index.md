@@ -12,8 +12,8 @@ De fiecare dată când am avut nevoie de un nomenclator a trebuit să caut, să 
 
 ## Bibliotecă de nomenclatoare
 
-<ul class="nomenclator-list">
-  <li class="nomenclator-card">
+<div class="nomenclator-grid">
+  <div class="nomenclator-card">
     <div class="nomenclator-header">
       <h3>CAEN Rev. 3</h3>
     </div>
@@ -24,5 +24,5 @@ De fiecare dată când am avut nevoie de un nomenclator a trebuit să caut, să 
       <a href="nomenclatoare/caen-rev-3/" class="btn"><i class="fas fa-list"></i> Vizualizare</a>
       <a href="assets/files/CAEN_Rev3.sql" class="btn"><i class="fas fa-download"></i> SQL</a>
     </div>
-  </li>
-</ul>
+  </div>
+</div>
